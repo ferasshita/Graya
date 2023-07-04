@@ -1,0 +1,40 @@
+{
+  "short_name": "Graya",
+  "name": "Graya notes",
+  "icons": [
+    {
+      "src": "images/favicon.ico",
+      "type": "image/ico",
+      "sizes": "940x788"
+    },
+    {
+      "src": "images/favicon.ico",
+      "type": "image/ico",
+      "sizes": "940x788"
+    }
+  ],
+  "start_url": "index",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "theme_color": "#FFFFFF",
+  "shortcuts": [
+    {
+      "name": "Graya notes",
+      "short_name": "Graya",
+      "description": "-Graya notes- for here you can get the lastest notes of libyan education",
+      "url": "index",
+      "icons": [{ "src": "images/favicon.ico", "sizes": "940x788" }]
+    },
+    {
+      "name": "Graya notes",
+      "short_name": "Graya",
+      "description": "-Graya notes- for here you can get the lastest notes of libyan education",
+      "url": "login",
+      "icons": [{ "src": "images/favicon.ico", "sizes": "940x788" }]
+    }
+  ],
+  "description": "-Graya notes- for here you can get the lastest notes of libyan education",
+  "screenshots": [
+
+  ]
+}
