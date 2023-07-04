@@ -1,0 +1,264 @@
+// Variables
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+$bodyfont:'IBM Plex Sans', sans-serif;
+$headingfont:'Rubik', sans-serif;;
+
+$p100: 100%;
+
+$sid-bar-w: 17.86rem;
+$hed-max: 125px;
+$main-hed-nav: 60px;
+$default-border-radius: 5px;
+$fct-border-radius: 5px;
+$border-circle: 50%;
+$mini-sid-bar-w: 60px;
+$ctrl-sid-bar-w: 345px;
+$inn-pg-sid-bar-w: 280px;
+$default-gutter-width: 1.5rem;
+// Typography
+//
+// Font-size, font-weight
+
+
+$fw-unset:unset;
+$fw-100:100;
+$fw-200: 200;
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+$fw-800: 800;
+$fw-900: 900;
+$fw-light: 100;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+$fs-0: 0;
+$fs-10: 0.7143rem;
+$fs-12: 0.8571rem;
+$fs-14: 1rem;
+$fs-16: 1.143rem;
+$fs-18: 1.286rem;
+$fs-20: 1.429rem;
+$fs-22: 1.5714285714285714rem;
+$fs-24: 1.714rem;
+$fs-26: 1.857rem;
+$fs-30: 2.143rem;
+$fs-32: 2.2857142857142856rem;
+$fs-36: 2.5714285714285716rem;
+$fs-38: 2.7142857142857144rem;
+$fs-40: 2.857rem;
+$fs-42: 3rem;
+$fs-46: 3.2857142857142856rem;
+$fs-48: 3.4285714285714284rem;
+$fs-50: 3.571rem;
+$fs-60: 4.286rem;
+$fs-70: 5rem;
+$fs-72: 5.142857142857143rem;
+$fs-76: 5.428571428571429rem;
+$fs-78: 5.571428571428571rem;
+$fs-80: 5.714rem;
+$fs-100: 7.142857142857143rem;
+$fs-140: 10rem ;
+$fs-180: 12.857142857142858rem;
+$fs-200: 14.285714285714286rem ;
+
+/*Social Media Colors*/
+$facebook: #3b5998;
+$google: #dd4b39;
+$twitter: #1da1f2;
+$linkedin: #0077b5;
+$pinterest: #bd081c;
+$git: #6cc644;
+$tumblr: #35465c;
+$vimeo: #1ab7ea;
+$youtube: #ff0000;
+$flickr: #ff0084;
+$reddit: #ff4500;
+$dribbble: #ea4c89;
+$skype: #00aff0;
+$instagram: #e1306c;
+$lastfm: #d51007;
+$behance: #1769ff;
+$rss: #f26522;
+$bitbucket: #205081;
+$dropbox: #007ee5;
+$foursquare: #2d5be3;
+$github: #4078c0;
+$vk: #45668e;
+
+/*Theme Colors*/
+$dark: #172b4c;
+$light:#f3f6f9;
+$light2:#ebedf3;
+$light3: #e4e6ef;
+$light4: #d1d3e0;
+$light5: #b5b5c3;
+$dx-blue: #485e90;
+$white:#ffffff;
+$black:#000000;
+$primary:#0080ff;
+$secondary:#e4e6ef;
+$info:#00b8d4;
+$success:#18d26b;
+$warning:#ffa800;
+$danger:#ff3f3f;
+$mildgray: #bcc2c8;
+
+$icon-lite-color: #625F6E;
+
+$wrapper: #f2f5fa;
+$wrapper-dark: #20304c;
+
+/*Lite color*/
+$primary-lite:#e4f2ff;
+$secondary-lite:#e9edf2;
+$info-lite:#caeaef;
+$success-lite:#c5eed7;
+$warning-lite:#ffefd0;
+$danger-lite:#ffdede;
+
+/*Theme Colors For Dark*/
+$body-dark: #0c1a32;
+$dark-text: #b5b5c3;
+$dark2: #566f9e;
+$dark3: #0c1a32;
+$dark-title: #bdd1f8;
+
+$colors: (
+  'primary':   $primary,
+  'secondary':   $secondary,
+  'info':      $info,
+  'success':   $success,
+  'warning':   $warning,
+  'danger':    $danger,
+  'dark':      $dark,
+  'white':     $white,
+  'black':     $black,
+  'light':     $light,
+);
+
+$gray-100:      #f3f6f9;
+$gray-200:      #ebedf3;
+$gray-300:      #e4e6ef;
+$gray-400:      #d1d3e0;
+$gray-500:      #b5b5c3;
+$gray-600:      #7e8299;
+$gray-700:      #5e6278;
+$gray-800:      #3f4254;
+$gray-900:      #181c32;
+
+
+$theme-primary-primary: #0080ff;
+$theme-primary-secondary:#e4e6ef;
+$theme-primary-info: #00b8d4;
+$theme-primary-success: #18d26b;
+$theme-primary-danger: #ff3f3f;
+$theme-primary-warning: #ffa800;
+
+$theme-primary-primary-lite: #e4f2ff;
+$theme-primary-secondary-lite:#e9edf2;
+$theme-primary-info-lite: #caeaef;
+$theme-primary-success-lite: #c5eed7;
+$theme-primary-danger-lite: #ffdede;
+$theme-primary-warning-lite: #ffefd0;
+
+$theme-primary-grd: linear-gradient(90deg, $theme-primary-primary, lighten($theme-primary-primary, 10%));
+$theme-primary-grd-dark: linear-gradient(90deg, darken($theme-primary-primary, 20%), darken($theme-primary-primary, 30%));
+
+
+$theme-secondary-primary: #e4e6ef;
+$theme-secondary-secondary:#0080ff;
+$theme-secondary-info: #00b8d4;
+$theme-secondary-success: #18d26b;
+$theme-secondary-danger: #ff3f3f;
+$theme-secondary-warning: #ffa800;
+
+$theme-secondary-primary-lite: #e9edf2;
+$theme-secondary-secondary-lite:#e4f2ff;
+$theme-secondary-info-lite: #caeaef;
+$theme-secondary-success-lite: #c5eed7;
+$theme-secondary-danger-lite: #ffdede;
+$theme-secondary-warning-lite: #ffefd0;
+
+$theme-secondary-grd: linear-gradient(90deg, $theme-secondary-primary, darken($theme-secondary-primary, 10%));
+$theme-secondary-grd-dark: linear-gradient(90deg, darken($theme-secondary-primary, 25%), darken($theme-secondary-primary, 35%));
+
+$theme-info-primary: #00b8d4;
+$theme-info-secondary:#e4e6ef;
+$theme-info-info: #0080ff;
+$theme-info-success: #18d26b;
+$theme-info-danger: #ff3f3f;
+$theme-info-warning: #ffa800;
+
+$theme-info-primary-lite: #caeaef;
+$theme-info-secondary-lite:#e9edf2;
+$theme-info-info-lite: #e4f2ff;
+$theme-info-success-lite: #c5eed7;
+$theme-info-danger-lite: #ffdede;
+$theme-info-warning-lite: #ffefd0;
+
+$theme-info-grd: linear-gradient(90deg, $theme-info-primary, lighten($theme-info-primary, 10%));
+$theme-info-grd-dark: linear-gradient(90deg, darken($theme-info-primary, 20%), darken($theme-info-primary, 30%));
+
+$theme-success-primary: #18d26b;
+$theme-success-secondary:#e4e6ef;
+$theme-success-info: #00b8d4;
+$theme-success-success: #0080ff;
+$theme-success-danger: #ff3f3f;
+$theme-success-warning: #ffa800;
+
+$theme-success-primary-lite: #c5eed7;
+$theme-success-secondary-lite:#e9edf2;
+$theme-success-info-lite: #caeaef;
+$theme-success-success-lite: #e4f2ff;
+$theme-success-danger-lite: #ffdede;
+$theme-success-warning-lite: #ffefd0;
+
+$theme-success-grd: linear-gradient(90deg, $theme-success-primary, lighten($theme-success-primary, 10%));
+$theme-success-grd-dark: linear-gradient(90deg, darken($theme-success-primary, 20%), darken($theme-success-primary, 30%));
+
+$theme-danger-primary: #ff3f3f;
+$theme-danger-secondary:#e4e6ef;
+$theme-danger-info: #00b8d4;
+$theme-danger-success: #18d26b;
+$theme-danger-danger: #0080ff;
+$theme-danger-warning: #ffa800;
+
+$theme-danger-primary-lite: #ffdede;
+$theme-danger-secondary-lite:#e9edf2;
+$theme-danger-info-lite: #caeaef;
+$theme-danger-success-lite: #c5eed7;
+$theme-danger-danger-lite: #e4f2ff;
+$theme-danger-warning-lite: #ffefd0;
+
+$theme-danger-grd: linear-gradient(90deg, $theme-danger-primary, lighten($theme-danger-primary, 10%));
+$theme-danger-grd-dark: linear-gradient(90deg, darken($theme-danger-primary, 20%), darken($theme-danger-primary, 30%));
+
+$theme-warning-primary: #ffa800;
+$theme-warning-secondary:#e4e6ef;
+$theme-warning-info: #00b8d4;
+$theme-warning-success: #18d26b;
+$theme-warning-danger: #ff3f3f;
+$theme-warning-warning: #0080ff;
+
+$theme-warning-primary-lite: #ffefd0;
+$theme-warning-secondary-lite:#e9edf2;
+$theme-warning-info-lite: #caeaef;
+$theme-warning-success-lite: #c5eed7;
+$theme-warning-danger-lite: #ffdede;
+$theme-warning-warning-lite: #e4f2ff;
+
+$theme-warning-grd: linear-gradient(90deg, $theme-warning-primary, lighten($theme-warning-primary, 10%));
+$theme-warning-grd-dark: linear-gradient(90deg, darken($theme-warning-primary, 20%), darken($theme-warning-primary, 30%));
+
+
+
+
+
+
+
