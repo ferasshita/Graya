@@ -1,14 +1,16 @@
 <!-- Project Title -->
-<h1 align="center">Graya-the-open-source-PHP-Elearning-network</h1>
+<h1 align="center">Graya 3.0 - Laravel E-Learning Platform</h1>
 
 <!-- Project Description -->
 <p align="center">
-Create your own E-learning network for free with graya E-learning network, easy to install and fast to use .. Make people learning
+A modern, open-source E-Learning platform built with Laravel. Create courses, engage students, and manage your learning community with ease.
 </p>
 
 <!-- Badges (Optional) -->
 <p align="center">
-  <img src="https://img.shields.io/badge/version-v2.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-v3.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/laravel-11.x-red.svg" alt="Laravel">
+  <img src="https://img.shields.io/badge/php-8.2+-purple.svg" alt="PHP">
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
 </p>
 
@@ -23,26 +25,104 @@ Create your own E-learning network for free with graya E-learning network, easy 
 
 <!-- Features -->
 ## Features
-- full control admin panel.
-- Arabic/English.
-- Add subjects.
-- Add classes.
-- Add chapters.
-- Add lessons in PDF, videos, images and, links.
-- chat with the students.
-- And more to explore.
+
+### For Students
+- Browse and enroll in courses (free or paid)
+- Track learning progress with visual indicators
+- Access course materials (videos, PDFs, text content)
+- Take quizzes and assessments
+- Chat with instructors
+- View course completion status
+
+### For Instructors
+- Create and manage courses
+- Add modules with different content types (video, PDF, text)
+- Track student progress and enrollments
+- Create quizzes with multiple-choice questions
+- Chat with enrolled students
+- Manage course pricing (free or paid)
+
+### For Administrators
+- Manage all users (students, instructors, admins)
+- Oversee all courses and enrollments
+- Process and track payments (cash/free)
+- View platform statistics and analytics
+- Manage user roles and permissions
+
+### Technical Features
+- Built with Laravel 11 framework
+- Role-based access control (Student, Instructor, Admin, Guest)
+- Responsive Bootstrap 5 UI
+- Secure authentication system
+- File upload management for course materials
+- Progress tracking system
+- Real-time chat functionality
 
 <!-- Installation -->
 ## Installation
-<p style="color: gray">* When you <b>sign up</b> to the first time into your social network, you will be the main admin of website and you can add more admins from <b>Dashboard > users > Edit/Delete </b>.</p>
-<ol type="1">
-<li>First of all, Download the script and extract it on your device.</li>
-	<li>Open your <b>phpMyAdmin</b> and create new database and call it <b>elearning</b>.</li>
-	<li>Import <b>database.sql</b> to your new database that you created, you can find <b>database.sql</b> from elearning folder that you extracted.</li>
-	<li>Edit <b>connect.php</b> file from <b>config &gt; connect.php</b>, set username and password and database name to your DB name ,pass and username.</li>
-	<li>upload the folder to your host.</li>
-	<li>Enjoy it.</li>
-</ol>
+
+### Requirements
+- PHP 8.2 or higher
+- Composer
+- MySQL/MariaDB database
+- Node.js and NPM (optional, for frontend assets)
+
+### Installation Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ferasshita/Graya.git
+   cd Graya
+   ```
+
+2. **Install dependencies**
+   ```bash
+   composer install
+   ```
+
+3. **Configure environment**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+4. **Update database configuration**
+   Edit `.env` file and set your database credentials:
+   ```
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=graya
+   DB_USERNAME=your_username
+   DB_PASSWORD=your_password
+   ```
+
+5. **Create database**
+   Create a MySQL database named `graya` (or whatever you specified in .env)
+
+6. **Run migrations**
+   ```bash
+   php artisan migrate
+   ```
+
+7. **Create storage link**
+   ```bash
+   php artisan storage:link
+   ```
+
+8. **Start the development server**
+   ```bash
+   php artisan serve
+   ```
+
+9. **Access the application**
+   Open your browser and visit `http://localhost:8000`
+
+### First Time Setup
+- The first user to register will need to be manually set as admin in the database
+- Update the `role` column in the `users` table to `admin` for your user
+- You can then promote other users through the admin panel
+
 <!-- Usage -->
 
 <!-- Contributing -->
