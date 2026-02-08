@@ -18,10 +18,11 @@ A modern, open-source E-Learning platform built with Laravel. Create courses, en
 ## Table of Contents
 - [Features](#features)
 - [Installation](#installation)
+- [Documentation](#documentation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact me](#ContactMe)
+- [Contact](#contact-me)
 
 <!-- Features -->
 ## Features
@@ -122,6 +123,27 @@ A modern, open-source E-Learning platform built with Laravel. Create courses, en
 - The first user to register will need to be manually set as admin in the database
 - Update the `role` column in the `users` table to `admin` for your user
 - You can then promote other users through the admin panel
+
+## Documentation
+
+For detailed information about the implementation, see:
+- **[INSTALLATION.md](INSTALLATION.md)** - Complete installation guide
+- **[IMPLEMENTATION.md](IMPLEMENTATION.md)** - Technical implementation details
+- **[API.md](API.md)** - API documentation and extension guide
+
+### Quick Links
+- Database schema and migrations: `database/migrations/`
+- Sample data seeder: `database/seeders/DatabaseSeeder.php`
+- Routes: `routes/web.php`
+- Models: `app/Models/`
+- Controllers: `app/Http/Controllers/`
+
+### Default Credentials (After Seeding)
+```
+Admin:      admin@graya.com / admin123
+Instructor: instructor@graya.com / instructor123
+Student:    student@graya.com / student123
+```
 
 <!-- Usage -->
 
